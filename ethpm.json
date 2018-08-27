@@ -1,0 +1,17 @@
+{
+  "package_name": "erc223",
+  "version": "0.0.3",
+  "description": "ERC223-token-standard",
+  "authors": [],
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "tokens"
+  ],
+  "dependencies": {
+    "zeppelin"  : "^1.3.0"
+  },
+  "license": "MIT"
+}

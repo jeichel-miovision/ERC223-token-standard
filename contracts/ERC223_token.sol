@@ -1,8 +1,9 @@
 pragma solidity ^0.4.11;
 
+import 'zeppelin/math/SafeMath.sol';
+
 import './ERC223_interface.sol';
 import './ERC223_receiving_contract.sol';
-import '././SafeMath.sol';
 
 /**
  * @title Reference implementation of the ERC223 standard token.
@@ -11,7 +12,7 @@ contract ERC223Token is ERC223Interface {
     using SafeMath for uint;
 
     mapping(address => uint) balances; // List of user balances.
-    
+
     /**
      * @dev Transfer the specified amount of tokens to the specified address.
      *      Invokes the `tokenFallback` function if the recipient is a contract.
@@ -41,7 +42,7 @@ contract ERC223Token is ERC223Interface {
         }
         emit Transfer(msg.sender, _to, _value, _data);
     }
-    
+
     /**
      * @dev Transfer the specified amount of tokens to the specified address.
      *      This function works the same with the previous one
@@ -69,7 +70,7 @@ contract ERC223Token is ERC223Interface {
         emit Transfer(msg.sender, _to, _value, empty);
     }
 
-    
+
     /**
      * @dev Returns balance of the `_owner`.
      *

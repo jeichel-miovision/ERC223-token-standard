@@ -1,0 +1,36 @@
+{
+  "name": "erc223",
+  "version": "0.0.3",
+  "description": "ERC223-token-standard",
+  "main": "truffle.js",
+  "scripts": {
+    "install": "truffle install",
+    "compile": "truffle compile",
+    "publish": "truffle publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dexaran/ERC223-token-standard.git"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "tokens"
+  ],
+  "authors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dexaran/ERC223-token-standard/issues"
+  },
+  "homepage": "https://github.com/Dexaran/ERC223-token-standard/#readme",
+  "dependencies": {
+    "truffle": "4.1.14",
+    "truffle-hdwallet-provider": "0.0.6"
+  },
+  "devDependencies": {
+    "ethpm": "0.0.16",
+    "ethpm-registry": "0.0.10"
+  }
+}
